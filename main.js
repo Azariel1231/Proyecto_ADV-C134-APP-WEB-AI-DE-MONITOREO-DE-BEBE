@@ -50,11 +50,16 @@ function draw() {
           stroke(r,g,b);
           rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
          
-          if()
+          if(objects[i].label ==  "person")
           {
             document.getElementById("number_of_objects").innerHTML = "Se encontró el bebé.";
             console.log("stop");
             song.stop();
+          } else{
+            document.getElementById("number_of_objects").innerHTML = "No se encontró el bebé.";
+            console.log("play");
+            song.play();
+
           }
           
 
